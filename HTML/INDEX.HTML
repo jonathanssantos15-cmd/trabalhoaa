@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto APIs</title>
+<link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+  <h1>Consumo de APIs</h1>
+
+
+  <section>
+    <h2>Cotação do Dólar</h2>
+
+    <button onclick="buscarDolar()">Buscar Cotação</button>
+
+    <p id="cotacao"></p>
+
+    <input type="number" id="real" placeholder="Valor em Real">
+    <button onclick="converterParaDolar()">Converter para Dólar</button>
+
+    <input type="number" id="dolar" placeholder="Valor em Dólar">
+    <button onclick="converterParaReal()">Converter para Real</button>
+
+    <p id="resultadoConversao"></p>
+  </section>
+
+
+  <section>
+    <h2>Dados de Países</h2>
+
+    <input type="text" id="pais" placeholder="Digite o país">
+    <button onclick="buscarPais()">Buscar País</button>
+
+    <div id="dadosPais"></div>
+  </section>
+
+
+  <section>
+    <h2>Imagem Aleatória de Cachorro</h2>
+
+    <button onclick="buscarCachorro()">Gerar Imagem</button>
+
+    <div>
+      <img id="imagemDog" width="300">
+    </div>
+  </section>
+
+  <!-- API CLIMA -->
+  <section>
+    <h2>Clima</h2>
+
+    <input type="text" id="cidade" placeholder="Digite a cidade">
+    <button onclick="buscarClima()">Buscar Clima</button>
+
+    <div id="clima"></div>
+  </section>
+
+  <script src="../JS/script.js"></script>
+</body>
+</html>

@@ -1,30 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 20px;
-  background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #454d55;
 }
 
-section {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
+/* =========================
+   MENU
+========================= */
+
+header {
+    height: 90px;
+    background: #444d55;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8.5%;
 }
 
-button {
-  margin-top: 10px;
-  padding: 10px;
-  cursor: pointer;
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
 }
 
-input {
-  padding: 8px;
-  margin-top: 10px;
-  width: 200px;
+.logo-icon {
+    width: 58px;
+    height: 58px;
+
+    border: 3px solid #55c0e8;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    margin-right: 10px;
+
+    font-size: 27px;
+    font-style: normal;
 }
 
-img {
-  margin-top: 15px;
-  border-radius: 10px;
+.dot {
+    font-size: 10px;
+    vertical-align: top;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a,
+.phone {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.phone {
+    border-left: 1px solid #aaa;
+    padding-left: 20px;
+}
+
+.trial {
+    background: #52b9df;
+    padding: 10px 16px;
+    border-radius: 4px;
+}
+
+
+.hero {
+    height: 442px;
+
+    position: relative;
+    overflow: hidden;
+
+    background: #f7f7f7;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 50%;
+    height: 100%;
+
+    padding-left: 8.5%;
+    padding-top: 98px;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(255,255,255,0.98),
+            rgba(255,255,255,0.75),
+            rgba(255,255,255,0)
+        );
+}
+
+.hero h1 {
+    font-size: 40px;
+    line-height: 1.15;
+    font-weight: bold;
+    color: #454d55;
+}
+
+.line {
+    width: 120px;
+    height: 2px;
+    background: #454d55;
+    margin: 24px 0 18px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.35;
+    color: #555e66;
+}
+
+
+
+
+
+.logos {
+    height: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0 8%;
+
+    color: #aaa;
+    background: white;
+}
+
+.logos div {
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.logos .number {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 0 30px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a,
+    .phone {
+        font-size: 12px;
+    }
+
+    .hero-content {
+        width: 65%;
+        padding-left: 30px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .logos {
+        padding: 0 20px;
+    }
+}
+
+    

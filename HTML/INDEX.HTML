@@ -1,64 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto APIs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Avaliações Comportamentais</title>
+
 <link rel="stylesheet" href="../CSS/style.css">
+
+
 </head>
 <body>
 
-  <h1>Consumo de APIs</h1>
+    <header>
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <span>JMJ<span class="dot">®</span></span>
+        </div>
+
+        <nav>
+            <a href="#">Log in</a>
+
+            <a href="#">Cadastrar</a>
 
 
-  <section>
-    <h2>Cotação do Dólar</h2>
+        </nav>
+    </header>
 
-    <button onclick="buscarDolar()">Buscar Cotação</button>
+   
+    <section class="hero">
 
-    <p id="cotacao"></p>
+        <div class="hero-content">
+            <h1>Sistema de Gerenciamento de Avaliações Comportamentais<br></h1>
 
-    <input type="number" id="real" placeholder="Valor em Real">
-    <button onclick="converterParaDolar()">Converter para Dólar</button>
+            <div class="line"></div>
 
-    <input type="number" id="dolar" placeholder="Valor em Dólar">
-    <button onclick="converterParaReal()">Converter para Real</button>
+            <p>
+              <br>
+             — 
+             
+             
+            Software Skills são as habilidades técnicas necessárias para trabalhar com tecnologia e desenvolvimento de sistemas. Elas incluem conhecimentos de programação, desenvolvimento web, bancos de dados, ferramentas de software e sistemas operacionais.
 
-    <p id="resultadoConversao"></p>
-  </section>
+Alguns exemplos são:
+
+HTML e CSS para criação de páginas web;
+JavaScript, Python e Java para programação;
+SQL para trabalhar com bancos de dados;
+Git e GitHub para controle de versões;
+Conhecimento de Windows, Linux e outras ferramentas de desenvolvimento.
+
+<i></i>
+            </p>
+
+          
+        </div>
+
+    
+
+    </section>
 
 
-  <section>
-    <h2>Dados de Países</h2>
+    <section class="logos">
+       
 
-    <input type="text" id="pais" placeholder="Digite o país">
-    <button onclick="buscarPais()">Buscar País</button>
+    </section>
 
-    <div id="dadosPais"></div>
-  </section>
-
-
-  <section>
-    <h2>Imagem Aleatória de Cachorro</h2>
-
-    <button onclick="buscarCachorro()">Gerar Imagem</button>
-
-    <div>
-      <img id="imagemDog" width="300">
-    </div>
-  </section>
-
-  <!-- API CLIMA -->
-  <section>
-    <h2>Clima</h2>
-
-    <input type="text" id="cidade" placeholder="Digite a cidade">
-    <button onclick="buscarClima()">Buscar Clima</button>
-
-    <div id="clima"></div>
-  </section>
-
-  <script src="../JS/script.js"></script>
 </body>
 </html>
